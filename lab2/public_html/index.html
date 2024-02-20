@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>задание 2</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form method="get" name="lab2_form">
+            <h1>Создать учётную запись</h1>
+            <h2>Профиль</h2>
+            <label for="name_field">Ваше имя:<sup>*</sup></label><br>
+            <input type="text" id="name_field" name="name" placeholder="Иван"><br>
+
+            <label for="email_field">Ваш email:<sup>*</sup></label><br>
+            <input type="email" id="email_field" name="email" placeholder="example@example.com"><br>
+
+            <label for="phone_field">Номер телефона:<sup>*</sup></label><br>
+            <input type="tel" id="phone_field" name="phone" placeholder="+7 (777) 777 77-77"><br>
+
+            <label for="password_field">Пароль:<sup>*</sup></label><br>
+            <input type="password" id="password_field" name="password"><br>
+
+            <label for="confirm_field">Потвердите пароль:<sup>*</sup></label><br>
+            <input type="password" id="confirm_field" name="confirm_password"><br>
+
+            <label for="info_field">Дополнительная информация:</label><br>
+            <textarea id="info_field" name="info" maxlength="200"></textarea><br>
+
+            <h2>Тип аккаунта</h2>
+            <input type="radio" id="standard" name="level" value="standard">
+            <label for="standard">Стандартный</label><br>
+
+            <input type="radio" id="extended" name="level" value="extended" checked>
+            <label for="extended">Расширенный</label><br>
+
+            <input type="radio" id="premium" name="level" value="premium">
+            <label for="premium">Премиум</label><br><br>
+            
+            <input type="radio" id="user" name="type" value="user" checked>
+            <label for="user">Покупатель</label><br>
+
+            <input type="radio" id="admin" name="type" value="admin">
+            <label for="admin">Продавец</label><br>
+
+            <h2>Дополнительная информация</h2>
+            <select id="data">
+                <option value="Y">Да</option>
+                <option value="N" selected>Нет</option>
+            </select>
+            <label for="data">Разрешаю использовать и обрабатывать мои данные</label><br><br>
+
+            <input type="checkbox" id="subscribe_field" name="subscribe" value="Y" checked>
+            <label for="subscribe_field">Подписаться на наши новости?</label><br><br>
+
+            <button type="submit">Отправить</button>
+            <button type="reset">Отмена</button>
+        </form>
+    </body>
+</html>
