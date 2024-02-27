@@ -1,0 +1,47 @@
+/*body {
+    background: gainsboro;
+}
+
+h1 {
+    color: green;
+}
+
+h2 {
+    color: blue;
+}
+
+* {
+    color: yellow;
+}
+
+#zag_1 {
+    color: darkblue;
+}
+
+.zag_class {
+    color: darkkhaki;
+}
+
+[type=tel] {
+    background: red;
+}
+
+[for] {
+    color: black;
+}
+
+ul li {
+    color: coral;
+}
+
+ul > li {
+    color: brown;
+}*/
+
+h1 {
+    color: #f00;
+}
+
+p{
+    font-family: Tahoma;
+}
