@@ -1,3 +1,60 @@
-body{
-    background: red;
+.basic{
+    background-color: #ddd;
+    border: 2px solid #bbb;
+    color: #333;
+    width: 1000px;
+    padding: 25px;
+    margin: 10px auto;
+    font-family: Tahoma, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    box-sizing: border-box;
 }
+.block{
+    background-color: #888;
+    border: 1px solid #666;
+    padding: 10px;
+    box-sizing: border-box;
+    display: block;
+    margin: 0px;
+}
+main{
+    min-height: 800px;
+    text-align: right;
+}
+#block1{
+    height: 200px;
+    width: 300px;
+}
+#block2{
+    position: fixed;
+    height: 200px;
+    width: 100px;
+    right: 0%;
+    bottom: 0%;
+}
+#block3{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+}
+#block4{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+}
+#logo{
+    box-sizing: border-box;
+    display: block;
+    width: 200px;
+    height: 100px;
+    padding: 0px;
+    margin: 0px;
+}
+
