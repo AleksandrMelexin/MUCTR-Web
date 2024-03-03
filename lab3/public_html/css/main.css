@@ -25,6 +25,7 @@ main{
 #block1{
     height: 200px;
     width: 300px;
+    float: left;
 }
 #block2{
     position: fixed;
@@ -57,4 +58,36 @@ main{
     padding: 0px;
     margin: 0px;
 }
+#text{
+    box-sizing: border-box;
+    display: block;
+    text-align: left;
+    float: right;
+    width: 500px;
+    margin: 0px;
+    padding: 10px;
+}
+nav > ul {
+    height: 20px;
+    display: block;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+nav > ul > li {
+    display: block;
+    float: left;
+    margin: auto 20px;
+}
 
+a:hover {
+    text-decoration: none;
+}
+
+a:hover, a:visited, a:active{
+    color: #333;
+}
+
+#current {
+    color: #600;
+}
