@@ -89,7 +89,7 @@ textarea {
     padding: 0
 }
 
-div {
+* {
     box-sizing: border-box;
 }
 
@@ -99,17 +99,19 @@ nav > div {
     background-color: #080808;
 }
 
-nav > div > img {
-    margin: 10px;
-}
-
-nav > form {
-    display: block;
+nav > div > a {
+    position: relative;
     float: left;
 }
 
-nav > div > form > input, nav > div > form > input {
+nav > form {
+    float: left;
+}
+
+nav > div > form > input, nav > div > form > button {
     display: block;
+    position: relative;
+    float: left;
     margin: 0px;
 }
 
@@ -119,27 +121,33 @@ header > div {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 500px;
 }
 
 header > div > h1 {
     font-size: 72px;
-    letter-height: 80px;
+    line-height: 80px;
     color: #f4f4f4;
 }
 
 header > div > p {
     font-size: 20px;
-    letter-height: 28px;
+    line-height: 28px;
     color: #f4f4f4;
 }
-main > div > img {
+
+main > div > img, main > div > div {
+    position: relative;
     float: left;
 }
-main > div > div {
-    float: right;
-}
+
 main > div {
     width: 100%;
     height: 188px;
 }
+
+footer > div{
+    display: block;
+    width: 100%;
+    background-color: #080808;
+}
+
