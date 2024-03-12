@@ -4,6 +4,7 @@ div.container {
     box-sizing: border-box;
     width: 1200px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 header {
@@ -67,4 +68,109 @@ header a#header_user {
 
 header a#header_cart {
     background-image: url("../img/cart.png");
+}
+
+main div#top_background {
+    background: url("../img/back.jpg") left center no-repeat;
+    background-size: cover;
+    padding: 64px 0;
+}
+
+main h1 {
+    font-size: 72px;
+    color: #f4f4f4;
+    line-height: 80px;
+    width: 50%;
+}
+
+main > div#top_background p {
+    font-size: 20px;
+    color: #f4f4f4;
+    line-height: 24px;
+    width: 50%;
+    margin-top: 24px;
+}
+
+main h2 {
+    margin: 24px 0;
+    font-size: 56px;
+    color: #080808;
+}
+
+main p#services_text {
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: #080808;
+}
+
+main ul > li {
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+main ul > li img {
+    float: left;
+}
+
+main ul > li div {
+    float: left;
+    margin-left: 24px;
+}
+
+main ul > li h3 {
+    font-size: 24px;
+    color: #080808;
+    margin-top: 48px;
+}
+
+main ul > li p {
+    margin-top: 24px;
+    font-size: 16px;
+    color: #080808;
+}
+
+footer hr {
+    background: #1E1E1E;
+    height: 1px;
+}
+
+footer {
+    background: #080808;
+}
+
+footer div#contacts {
+    text-align: center;
+    padding: 24px 0;
+
+}
+
+footer div#copy {
+    overflow: hidden;
+    padding: 24px 0;
+}
+
+footer div#contacts span {
+    color: #A4C8FF;
+    font-size: 16px;
+
+}
+
+footer div#contacts a {
+    color: #f4f4f4;
+    font-size: 16px;
+    margin-left: 40px;
+}
+
+footer div#copy span {
+    color: #f4f4f4;
+    font-size: 16px
+    display: block;
+    float: left;
+}
+
+footer div#copy p {
+    color: #D0D9DF;
+    font-size: 16px;
+    display: block;
+    float: right;
 }
