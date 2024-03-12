@@ -163,14 +163,14 @@ footer div#contacts a {
 
 footer div#copy span {
     color: #f4f4f4;
-    font-size: 16px
+    font-size: 16px;
     display: block;
-    float: left;
+    float: right;
 }
 
 footer div#copy p {
     color: #D0D9DF;
     font-size: 16px;
     display: block;
-    float: right;
+    float: left;
 }
