@@ -1,0 +1,70 @@
+@import "reset.css";
+
+div.container {
+    box-sizing: border-box;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    box-sizing: border-box;
+    background-color: #080808;
+    height: 112px;
+    padding: 24px;
+}
+
+header a#logo {
+    display: block;
+    float: left;
+}
+
+header form {
+    width: 660px;
+    height: 48px;
+    float: left;
+    margin-left: 100px;
+    padding-top: 8px;
+}
+
+header form > input {
+    box-sizing: border-box;
+    width: 660px;
+    height: 48px;
+    background-color: #1D1E20;
+    color: #636567;
+    font-size: 16px;
+    border: none;
+    padding: 0 72px 0 20px;
+}
+
+header form > input:focus {
+    color: #fff;
+}
+
+header form > button {
+    height: 32px;
+    width: 32px;
+    background-color: #1D1E20;
+    background-image: url("../img/search.png");
+    position: relative;
+    top: -40px;
+    right: -608px;
+}
+
+header a.header_links {
+    display: block;
+    float: right;
+    box-sizing: border-box;
+    height: 32px;
+    width: 32px;
+    margin: 16px 0 0 40px;
+
+}
+
+header a#header_user {
+    background-image: url("../img/user.png");
+}
+
+header a#header_cart {
+    background-image: url("../img/cart.png");
+}
