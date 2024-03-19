@@ -76,6 +76,11 @@ main div#top_background {
     padding: 64px 0;
 }
 
+main div#news_background {
+    background-color: #A4C8FF;
+    padding: 64px 0;
+}
+
 main h1 {
     font-size: 72px;
     color: #f4f4f4;
@@ -97,7 +102,7 @@ main h2 {
     color: #080808;
 }
 
-main p#services_text {
+main p#services_text, main p#news_text, main p.form_text{
     margin-bottom: 24px;
     font-size: 16px;
     color: #080808;
@@ -123,7 +128,7 @@ main ul > li h3 {
     margin-top: 48px;
 }
 
-main ul > li p {
+main ul > li p.u_text {
     margin-top: 24px;
     font-size: 16px;
     color: #080808;
@@ -173,4 +178,89 @@ footer div#copy p {
     font-size: 16px;
     display: block;
     float: left;
+}
+
+main ul > li p.date {
+    padding: 10px;
+    width: 140px;
+    text-align: center;
+    margin-top: 0;
+    font-size: 16px;
+    color: #eee;
+    background-color: #00f;
+    border-radius: 50px;
+}
+
+main > div > div > ul > li img {
+    float: right;
+}
+
+main > div > div > ul > li div {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    margin-right: 24px;
+    width: 50%;
+}
+
+main ul > li a.news_link, main form > button{
+    display: block;
+    box-sizing: border-box;
+    margin-top: 24px;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    border: solid 1px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+main li.n_li {
+    overflow: hidden;
+    margin: 0;
+}
+
+main ul > li a.news_link:hover, main form > button:hover {
+    color: #aaa;
+}
+
+main hr {
+    margin: 24px 0;
+    background: #1E1E1E;
+    height: 1px;
+}
+
+main form > input {
+    display: block;
+    box-sizing: border-box;
+    width: 45%;
+    height: 48px;
+    font-size: 16px;
+    color: #bbb;
+    border: none;
+    border-bottom: 2px solid #bbb;
+    margin-bottom: 24px;
+}
+
+main form > input#user_name {
+    float: left;
+}
+main form > input#user_phone {
+    float: right;
+}
+
+main p.form_text > a#politic {
+    color: #999;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+main p.form_text > a#politic:hover {
+    color: #666;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+main form {
+    margin-bottom: 24px;
 }
