@@ -1,0 +1,270 @@
+@import "reset.css";
+
+div.container {
+    box-sizing: border-box;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    box-sizing: border-box;
+    background-color: #BB0000;
+    height: 112px;
+    padding: 24px;
+}
+
+header a#logo {
+    display: block;
+    float: left;
+}
+
+header form {
+    width: 660px;
+    height: 48px;
+    float: left;
+    margin-left: 100px;
+    padding-top: 8px;
+}
+
+header form > input {
+    box-sizing: border-box;
+    width: 660px;
+    height: 48px;
+    background-color: #1D1E20;
+    color: #636567;
+    font-size: 16px;
+    border: none;
+    padding: 0 72px 0 20px;
+}
+
+header form > input:focus {
+    color: #fff;
+}
+
+header form > button {
+    height: 32px;
+    width: 32px;
+    background-color: #1D1E20;
+    background-image: url("../img/search.png");
+    position: relative;
+    top: -40px;
+    right: -608px;
+}
+
+header a.header_links {
+    display: block;
+    float: right;
+    box-sizing: border-box;
+    height: 32px;
+    width: 32px;
+    margin: 16px 0 0 40px;
+
+}
+
+header a#header_user {
+    background-image: url("../img/user.png");
+}
+
+header a#header_cart {
+    background-image: url("../img/cart.png");
+}
+
+main div#top_background {
+    background: url("../img/back.jpg") left center no-repeat;
+    background-size: cover;
+    padding: 64px 0;
+}
+
+main div#news_background {
+    margin-top: 36px;
+    background-color: #F6F9FF;
+    padding: 64px 0;
+}
+
+main h1 {
+    font-size: 72px;
+    color: #f4f4f4;
+    line-height: 80px;
+    width: 50%;
+}
+
+main > div#top_background p {
+    font-size: 20px;
+    color: #f4f4f4;
+    line-height: 24px;
+    width: 50%;
+    margin-top: 24px;
+}
+
+main h2 {
+    margin: 24px 0;
+    font-size: 56px;
+    color: #080808;
+}
+
+main p#services_text, main p#news_text, main p.form_text{
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: #080808;
+}
+
+main ul > li {
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+main ul > li img {
+    float: left;
+}
+
+main ul > li div {
+    float: left;
+    margin-left: 24px;
+}
+
+main ul > li h3 {
+    font-size: 24px;
+    color: #080808;
+    margin-top: 48px;
+}
+
+main ul > li p.u_text {
+    margin-top: 24px;
+    font-size: 16px;
+    color: #080808;
+}
+
+footer hr {
+    background: #1E1E1E;
+    height: 1px;
+}
+
+footer {
+    background: #080808;
+}
+
+footer div#contacts {
+    text-align: center;
+    padding: 24px 0;
+
+}
+
+footer div#copy {
+    overflow: hidden;
+    padding: 24px 0;
+}
+
+footer div#contacts span {
+    color: #A4C8FF;
+    font-size: 16px;
+
+}
+
+footer div#contacts a {
+    color: #f4f4f4;
+    font-size: 16px;
+    margin-left: 40px;
+}
+
+footer div#copy span {
+    color: #f4f4f4;
+    font-size: 16px;
+    display: block;
+    float: right;
+}
+
+footer div#copy p {
+    color: #D0D9DF;
+    font-size: 16px;
+    display: block;
+    float: left;
+}
+
+main ul > li p.date {
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 14px;
+    width: 136px;
+    height: 24px;
+    text-align: center;
+    margin-top: 0;
+    color: #f4f4f4;
+    background-color: #148BBF;
+    border-radius: 50px;
+}
+
+main > div > div > ul > li img {
+    float: right;
+}
+
+main > div > div > ul > li div {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    margin-right: 24px;
+    width: 50%;
+}
+
+main ul > li a.news_link, main form > button{
+    display: block;
+    box-sizing: border-box;
+    margin-top: 24px;
+    padding: 10px;
+    text-align: center;
+    width: 130px;
+    border: solid 2px #bbb;
+    border-radius: 5px;
+}
+
+main li.n_li {
+    overflow: hidden;
+    margin: 0;
+}
+
+main ul > li a.news_link:hover, main form > button:hover {
+    color: #333;
+}
+
+main hr {
+    margin: 24px 0;
+    background: #bbb;
+    color: #bbb;
+    height: 1px;
+    border: none;
+}
+
+main form > input, main form > input{
+    display: block;
+    box-sizing: border-box;
+    width: 45%;
+    height: 48px;
+    font-size: 16px;
+    color: #bbb;
+    border: none;
+    border-bottom: 2px solid #bbb;
+    margin-bottom: 24px;
+}
+
+main form > input#user_name {
+    float: left;
+}
+main form > input#user_phone {
+    float: right;
+}
+
+main p.form_text > a#politic {
+    color: #999;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+main p.form_text > a#politic:hover {
+    color: #666;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+main form {
+    margin-bottom: 24px;
+}

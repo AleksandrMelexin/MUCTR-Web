@@ -1,56 +1,141 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>задание 1</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <h1>Основы HTML5</h1>
+<head>
+    <title>Автосалон MelCars</title>
+    <meta name="description" content="Здесь продаются автомобили с пробегом по доступным ценам.">
+    <meta charset="UTF-8">
+    <link type="image/svg+xml" rel="icon" href="img/icon.png">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <a id="logo" href="index.html">
+            <img src="img/logo.png" width="236" height="64" alt="MakeShop">
+        </a>
+        <form action="index.html" method="get">
+            <input type="text" name="search_query" placeholder="Введите поисковый запрос">
+            <button type="submit"></button>
+        </form>
+        <a class="header_links" id="header_cart" href="index.html"></a>
+        <a class="header_links" id="header_user" href="index.html"></a>
+    </div>
+</header>
+<main>
+    <div id="top_background">
+        <div class="container">
+            <h1>Магазины, маркетплейсы, стартапы</h1>
+            <p>Профессиональная команда готова предложить вам решение задчи любой сложности. От готовых модулей до
+                разработки специфических интеграций и решений на CS-Cart.</p>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Услуги по разработке и настройке CS-Cart</h2>
+        <p id="services_text">Мы предлагаем пакеты услуг по разным направлениям</p>
         <ul>
-            <li><a href="#text">Текст</a></li>
-            <li><a href="#list">Список</a></li>
-            <li><a href="#table">Таблица</a></li>
+            <li>
+                <img src="img/u1.jpg" alt="Разработка магазинов" width="216" height="188">
+                <div>
+                    <h3>Разработка магазинов</h3>
+                    <p class="u_text">Подберём подходящую для вас версию CMS и тему оформления</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/u2.jpg" alt="Разработка магазинов" width="216" height="188">
+                <div>
+                    <h3>Разработка маркетплейсов</h3>
+                    <p class="u_text">Разработаем для вас оптимизированную онлайн-платформу по предоставлению продуктов и услуг</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/u3.jpg" alt="" width="216" height="188">
+                <div>
+                    <h3>Разработка модулей и решений для CS-Cart</h3>
+                    <p class="u_text">Если вам нужен модуль или определенный функционал</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/u4.jpg" alt="" width="216" height="188">
+                <div>
+                    <h3>Дизайн сайтов и фирменного стиля</h3>
+                    <p class="u_text">От кастомизации до полностью индивидуального дизайна</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/u5.jpg" alt="" width="216" height="188">
+                <div>
+                    <h3>Интеграции CS-Cart c сервисами</h3>
+                    <p class="u_text">Любые интеграции со складскими системами, службами оплаты и доставки</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/u6.jpg" alt="" width="216" height="188">
+                <div>
+                    <h3>Техническая поддержка</h3>
+                    <p class="u_text">Оказываем техническую поддержку и сопровождение проектов</p>
+                </div>
+            </li>
         </ul>
-        <h2 id="text">Текст</h2>
-        <p>Тут немного текста о том, что этот раздел посвещён проверке тегов, связанных с текстом...</p>
-        <p><b>Этанол</b> - органическое соединение, относящиеся к классу одноактановых спиртов. При стандартных условиях,
-            этанол - это летучая, горючая, бесцветная прозрачная жидкость с хаарктерным запахом и жгучим вкусом.</p>
-        <p><i>Формула</i> C<sub>2</sub>H<sub>5</sub>OH</p>
+    </div>
+    <div id="news_background">
+        <div class="container">
+            <h2>Новости</h2>
+            <p id="news_text">Пишем статьи на серьезных площадках и публикуем разные интересности</p>
+            <ul>
+                <li>
+                    <div>
+                        <p class="date">22 января 2024</p>
+                        <h3>Нетрадиционное использование ChatGPT вместо базы данных с API или подбор запчастей «наоборот»</h3>
+                        <p class="u_text">Наш клиент, магазин автомобильных аккумуляторов massa.moscow, нуждался в разработке модуля для подбора аккумуляторов по модели автомобиля.</p>
+                        <p class="u_text">В поисках оптимального решения мы пришли к идее симбиоза двух API. Первый мы использовали для доступа к обширной базе...</p>
+                        <a class="news_link" href="index.html">Подробнее</a>
+                    </div>
+                    <img src="img/n1.png" alt="" width="500px" height="300px">
+                </li>
+                <hr>
+                <li>
+                    <div>
+                        <p class="date">30 ноября 2023</p>
+                        <h3>Новый кейс "Интернет-магазин американских БАДов"</h3>
+                        <p class="u_text">Рады представить вам наш новый кейс по разработке интернет-магазина американских БАДов на CS-Cart</p>
+                        <p class="u_text">Из особенностей проекта:
+                        <ul>
+                            <li class="n_li">- Разработка логотипа, фирменного стиля и дизайна страниц</li>
+                            <li class="n_li">- Поддержка различных языковых версий</li>
+                            <li class="n_li">- Разработка модуля валют</li>
+                        </ul>
+                        </p>
+                        <a class="news_link" href="index.html">Подробнее</a>
+                    </div>
+                    <img src="img/n2.png" alt="" width="500px" height="300px">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Оставьте заявку</h2>
+        <p class="form_text">Оставьте заявку, и мы вам перезвоним</p>
+        <form action="index.html" method="get">
+            <input id="user_name" type="text" name="user_name" placeholder="Имя">
+            <input id="user_phone" type="tel" required name="user_phone" placeholder="Телефон*">
+            <button type="submit">Отправить</button>
+        </form>
+        <p class="form_text">Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных и <a href="index.html" id="politic">политикой конфиденциальности</a></p>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <div id="contacts">
+            <span>Контакты</span>
+            <a href="tel:89069550360">8 906 955-03-60</a>
+            <a href="mailto:MelCars@gmail.com">MelCars@gmail.com</a>
+        </div>
         <hr>
-        <h2 id="list">Список</h2>
-        <ol start="3" type="i">
-            <li>Элемент 3</li>
-            <li>Элемент 4</li>
-            <li>Элемент 5</li>
-        </ol>
-        <hr>
-        <h2 id="table">Таблица</h2>
-        <p>просто таблица</p>
-        <table border="1">
-            <tr>
-                <th>Название</th>
-                <th>Цена</th>
-                <th>оличество</th>
-            </tr>
-            <tr>
-                <td>Лыжи</td>
-                <td>20000</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>Куртка</td>
-                <td>10000</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>Перчатки</td>
-                <td>1000</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td><b>Итого:</b></td>
-                <td colspan="2">32000</td>
-            </tr>
-        </table>
-    </body>
+        <div id="copy">
+            <p>Работу выполнил: Мелехин Александр, группа Кс-20</p>
+            <span>&copy; MelCars.ru</span>
+        </div>
+    </div>
+</footer>
+</body>
 </html>
