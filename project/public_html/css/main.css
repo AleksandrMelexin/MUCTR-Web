@@ -7,9 +7,18 @@ div.container {
     overflow: hidden;
 }
 
+body{
+    height: 100vh;
+}
+
 header {
     box-sizing: border-box;
-    background-color: #BB0000;
+    background-color: #bb0000;
+    display: block;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
     height: 112px;
     padding: 24px;
 }
@@ -17,57 +26,20 @@ header {
 header a#logo {
     display: block;
     float: left;
-}
-
-header form {
-    width: 660px;
-    height: 48px;
-    float: left;
-    margin-left: 100px;
-    padding-top: 8px;
-}
-
-header form > input {
+    background-image: url("../img/logo.png");
     box-sizing: border-box;
-    width: 660px;
-    height: 48px;
-    background-color: #1D1E20;
-    color: #636567;
-    font-size: 16px;
-    border: none;
-    padding: 0 72px 0 20px;
-}
-
-header form > input:focus {
-    color: #fff;
-}
-
-header form > button {
-    height: 32px;
-    width: 32px;
-    background-color: #1D1E20;
-    background-image: url("../img/search.png");
-    position: relative;
-    top: -40px;
-    right: -608px;
+    height: 64px;
+    width: 236px;
 }
 
 header a.header_links {
     display: block;
     float: right;
     box-sizing: border-box;
-    height: 32px;
-    width: 32px;
+    color: #fff;
+    font-size: 32px;
     margin: 16px 0 0 40px;
 
-}
-
-header a#header_user {
-    background-image: url("../img/user.png");
-}
-
-header a#header_cart {
-    background-image: url("../img/cart.png");
 }
 
 main div#top_background {
@@ -78,8 +50,13 @@ main div#top_background {
 
 main div#news_background {
     margin-top: 36px;
-    background-color: #F6F9FF;
+    background-color: #FFF;
     padding: 64px 0;
+}
+
+main {
+    margin-top: 112px;
+    flex: 1 0 auto;
 }
 
 main h1 {
@@ -99,6 +76,7 @@ main > div#top_background p {
 
 main h2 {
     margin: 24px 0;
+    margin-top: 0px;
     font-size: 56px;
     color: #080808;
 }
@@ -126,7 +104,7 @@ main ul > li div {
 main ul > li h3 {
     font-size: 24px;
     color: #080808;
-    margin-top: 48px;
+    margin-top: 24px;
 }
 
 main ul > li p.u_text {
@@ -136,12 +114,19 @@ main ul > li p.u_text {
 }
 
 footer hr {
-    background: #1E1E1E;
+    background: #fff;
     height: 1px;
+    border: none;
 }
 
 footer {
-    background: #080808;
+    display: block;
+    background: #BB0000;
+    position:static;
+    flex:  0 0 auto;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
 }
 
 footer div#contacts {
@@ -156,26 +141,26 @@ footer div#copy {
 }
 
 footer div#contacts span {
-    color: #A4C8FF;
+    color: #FFF;
     font-size: 16px;
 
 }
 
 footer div#contacts a {
-    color: #f4f4f4;
+    color: #FFF;
     font-size: 16px;
     margin-left: 40px;
 }
 
 footer div#copy span {
-    color: #f4f4f4;
+    color: #fff;
     font-size: 16px;
     display: block;
     float: right;
 }
 
 footer div#copy p {
-    color: #D0D9DF;
+    color: #FFF;
     font-size: 16px;
     display: block;
     float: left;
@@ -190,22 +175,33 @@ main ul > li p.date {
     text-align: center;
     margin-top: 0;
     color: #f4f4f4;
-    background-color: #148BBF;
+    background-color: #BB0000;
     border-radius: 50px;
 }
 
 main > div > div > ul > li img {
-    float: right;
+    float: left;
 }
 
 main > div > div > ul > li div {
     box-sizing: border-box;
     display: block;
-    float: left;
+    float: right;
     margin-right: 24px;
     width: 50%;
 }
-
+main button{
+    display: block;
+    box-sizing: border-box;
+    margin-top: 24px;
+    padding: 10px;
+    text-align: center;
+    width: 130px;
+    border: solid 2px;
+    background-color: #bb0000;
+    color:#fff;
+    border-radius: 15px;    
+}
 main ul > li a.news_link, main form > button{
     display: block;
     box-sizing: border-box;
@@ -213,8 +209,8 @@ main ul > li a.news_link, main form > button{
     padding: 10px;
     text-align: center;
     width: 130px;
-    border: solid 2px #bbb;
-    border-radius: 5px;
+    border: solid 2px #bb0000;
+    border-radius: 15px;
 }
 
 main li.n_li {
@@ -228,8 +224,8 @@ main ul > li a.news_link:hover, main form > button:hover {
 
 main hr {
     margin: 24px 0;
-    background: #bbb;
-    color: #bbb;
+    background: #aaa;
+    color: #aaa;
     height: 1px;
     border: none;
 }
@@ -240,9 +236,9 @@ main form > input, main form > input{
     width: 45%;
     height: 48px;
     font-size: 16px;
-    color: #bbb;
+    color: #999;
     border: none;
-    border-bottom: 2px solid #bbb;
+    border-bottom: 2px solid #999;
     margin-bottom: 24px;
 }
 
@@ -267,4 +263,158 @@ main p.form_text > a#politic:hover {
 
 main form {
     margin-bottom: 24px;
+}
+
+#ThankYou {
+    font-size: 72px;
+    text-align: center;
+    color:#000;
+}
+.root{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#politc{
+    font-size: 30px;
+    color: #000;
+}
+
+#politic h1{
+    font-size: 70px;
+    width: 100%;
+    color: #000;
+}
+
+
+@media (max-width: 1200px) {
+    div.container {
+        width: 90%;
+    }
+
+    header a.header_links {
+        font-size: 24px;
+    }
+
+    main h1 {
+        font-size: 56px;
+    }
+
+    main h2 {
+        font-size: 48px;
+    }
+
+    main ul > li img, main ul > li div {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    main ul > li div {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 16px;
+    }
+
+    header a#logo {
+        height: 48px;
+        width: 180px;
+    }
+
+    header a.header_links {
+        font-size: 20px;
+        margin: 16px 0;
+    }
+
+    main h1 {
+        font-size: 40px;
+    }
+
+    main h2 {
+        font-size: 32px;
+    }
+
+    main p#services_text, main p#news_text, main p.form_text {
+        font-size: 14px;
+    }
+
+    main ul > li {
+        text-align: center;
+    }
+
+    main ul > li img {
+        margin-bottom: 16px;
+    }
+
+    main ul > li div {
+        margin-left: 0;
+    }
+
+    main form > input, main form > input {
+        width: 90%;
+        margin: 12px auto;
+    }
+
+    main form > input#user_name, main form > input#user_phone {
+        float: none;
+    }
+}
+
+@media (max-width: 480px) {
+    main h1 {
+        font-size: 32px;
+    }
+
+    main h2 {
+        font-size: 24px;
+    }
+
+    main p#services_text, main p#news_text, main p.form_text {
+        font-size: 12px;
+    }
+
+    header {
+        padding: 12px;
+        text-align: center;
+    }
+
+    header a#logo {
+        margin: 0 auto;
+    }
+
+    main div#top_background {
+        padding: 32px 0;
+    }
+
+    main div#news_background {
+        padding: 32px 0;
+    }
+
+    footer div#contacts a, footer div#contacts span {
+        font-size: 14px;
+        margin: 0 10px;
+    }
+
+    footer div#copy p, footer div#copy span {
+        font-size: 14px;
+    }
+
+    main ul > li p.date {
+        font-size: 12px;
+        width: 100px;
+    }
+
+    main button, main ul > li a.news_link, main form > button {
+        width: 100px;
+    }
+
+    main form > input, main form > input {
+        width: 100%;
+        margin: 8px auto;
+    }
 }
